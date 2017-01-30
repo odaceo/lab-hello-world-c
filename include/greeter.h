@@ -16,7 +16,7 @@
 #define geeter__
 
 #ifdef __cplusplus
-    extern "C" {
+extern "C" {
 #endif
 
 char* greeter_sayhello(char* name);
