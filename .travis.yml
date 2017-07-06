@@ -8,7 +8,6 @@ compiler:
     - clang
 
 before_script:  
-    - eval "$(curl -sL https://github.com/odaceo/script-ubuntu-cmake/raw/master/install.sh)"
     - mkdir build
     - cd build
     - cmake ..
