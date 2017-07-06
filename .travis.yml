@@ -17,3 +17,9 @@ before_script:
 script: 
     - make
     - ./hello Odaceo
+
+deploy:
+  provider: bintray
+  file: bintray.json
+  user: ${BINTRAY_USER}
+  key: ${BINTRAY_PASS}
