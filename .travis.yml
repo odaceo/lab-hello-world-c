@@ -2,7 +2,6 @@ language: c
 
 os: linux
 dist: trusty
-sudo: required
 
 compiler:  
     - gcc
@@ -20,6 +19,6 @@ script:
 
 deploy:
   provider: bintray
-  file: "bintray.json"
+  file: bintray.json
   user: ${BINTRAY_USER}
   key: ${BINTRAY_PASS}
