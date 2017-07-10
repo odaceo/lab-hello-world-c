@@ -19,7 +19,7 @@
 
     "files": [
         {
-            "includePattern": "/home/travis/build/odaceo/lab-hello-world-c/build/hello", 
+            "includePattern": "build/hello", 
             "uploadPattern": "/linux-amd64/hello",
             "matrixParams": {
                 "override": 1 
