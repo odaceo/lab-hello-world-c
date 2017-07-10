@@ -19,7 +19,7 @@
 
     "files": [
         {
-            "includePattern": "build/hello", 
+            "includePattern": "hello", 
             "uploadPattern": "/linux-amd64/hello",
             "matrixParams": {
                 "override": 1 
