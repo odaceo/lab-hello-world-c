@@ -20,7 +20,7 @@
     "files": [
         {
             "includePattern": "build/hello", 
-            "uploadPattern": "/linux-amd64/hello",
+            "uploadPattern": "/lab-hello-world-c/0.1.0/linux-amd64/hello",
             "matrixParams": {
                 "override": 1 
             }
