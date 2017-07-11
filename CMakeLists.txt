@@ -15,18 +15,15 @@
 cmake_minimum_required (VERSION 3.2)
 project (Hello)
 
-# build static executable
-set(CMAKE_EXE_LINKER_FLAGS -static)
-set(CMAKE_FIND_LIBRARY_SUFFIXES .a) 
-set(CMAKE_EXE_LINK_DYNAMIC_C_FLAGS)
-set(CMAKE_SHARED_LIBRARY_C_FLAGS)
-set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS)
-
 # add the search path for include files
 include_directories (include)
 
 # add the sources using wildcard
 file(GLOB SOURCES "src/*.c")
+
+# build static executable
+set(CMAKE_EXE_LINKER_FLAGS -static)
+set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS)
 
 # add the executable
 add_executable(hello ${SOURCES})
