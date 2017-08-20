@@ -12,14 +12,14 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-cmake_minimum_required (VERSION 3.2)
 project (Hello)
+cmake_minimum_required (VERSION 3.2)
 
 # add the search path for include files
 include_directories (include)
 
 # add the sources using wildcard
-file(GLOB SOURCES "src/*.c")
+file(GLOB SOURCES src/*.c)
 
 # build static executable
 set(CMAKE_EXE_LINKER_FLAGS -static)
@@ -27,3 +27,4 @@ set(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS)
 
 # add the executable
 add_executable(hello ${SOURCES})
+
